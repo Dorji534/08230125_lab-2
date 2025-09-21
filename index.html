@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dorji Wangchuk - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="glass-header">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="d.jpg" alt="Logo" />
+        <span>Dorji<span class="highlight">07</span></span>
+      </div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="active">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Dorji Wangchuk</span></h1>
+      <p>A passionate ICT student and future educator based in Bhutan.</p>
+      <a href="#about" class="hero-btn">Explore More</a>
+    </div>
+    <div class="hero-image">
+      <img src="dong_cho.jpg" alt="Dorji Wangchuk">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Dorji Wangchuk. All rights reserved.</p>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navLinks.classList.toggle("active");
+      const expanded = hamburger.getAttribute("aria-expanded") === "true";
+      hamburger.setAttribute("aria-expanded", !expanded);
+    });
+  </script>
+
+</body>
+</html>
+
+
+<main>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <h1 class="section-title">About Me</h1>
+    <div class="about-container">
+      <div class="about-text">
+        <h2>Information</h2>
+        <p>I always wanted to have a peaceful life, where my existence would not bother anybody or harm them. Despite not having any ambition or any scope in life, I am still trying to have my best youth life as possible.</p>
+        <p>Ahhh! Almost forgot to introduce, my name is Dorji Wangchuk, I was born in a village named Thragom, Tashi Yangtse Dzongkhag.</p>
+        <p>Even though I come from a small village tucked away in the mountains, I’ve always believed that simplicity is not a limitation. In fact, it is a kind of quiet freedom. My days may not be filled with grand adventures or ambitions, but they are filled with small moments—moments that I have learned to appreciate deeply.</p>
+        <p>For now, I am just trying to live my youth with a quiet joy. I may not be achieving much by the world’s standards, but I laugh with my friends, share stories by the fire, walk under the stars, and help my family when I can. And maybe, just maybe, that is enough.</p>
+      </div>
+      <img src="dong_sky.jpg" alt="Dorji Wangchuk" class="about-img" />
+    </div>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section id="education">
+    <h1 class="section-title">Education</h1>
+
+    <div class="about-container">
+      <div class="about-text">
+        <h2>Thragom Lower Secondary School</h2>
+        <p>My first school was Thragom Lower Secondary School, a place filled with many cherished memories. It was here that I began my educational journey and learned the fundamental etiquettes and values that shaped my character. The supportive teachers and friendly classmates made learning enjoyable and motivated me to work hard. This school laid the foundation for my academic growth and instilled in me a lifelong love for knowledge</p>
+        <p>Throughout my time at Thragom Lower Secondary, I developed a strong sense of discipline and curiosity. The lessons I learned extended beyond textbooks — I learned about teamwork, respect, and the importance of perseverance. These early experiences ignited a passion for learning that continues to drive me today.</p>
+        <P>As I progressed in my education, I realized the power of education not just in personal growth, but also in uplifting communities. This inspired me to pursue further studies with the goal of becoming an ICT teacher, so that I can contribute to empowering future generations with technology and skills essential for today’s world.</p>
+
+      </div>
+      <img src="thragom.jpg" alt="Thragom School" class="about-img">
+    </div>
+
+    <div class="about-container">
+      <div class="about-text">
+        <h2>Baylling Central School</h2>
+        <p>I continued my studies at Baylling Central School, where I completed my education up to class 12. This school played a significant role in shaping my academic mindset and personal growth. It was here that I realized the importance of dedication and hard work to achieve a comfortable and fulfilling life. The competitive environment and diverse student body challenged me to push my limits and develop resilience.</p>
+        <p>At Baylling Central School, I gained not only academic knowledge but also valuable life skills such as time management, responsibility, and teamwork. The guidance of my teachers and the friendships I formed encouraged me to stay focused and motivated. This experience strengthened my belief that education is the key to unlocking future opportunities, and it inspired me to set higher goals for myself.</p>
+
+      </div>
+      <img src="baylling.jpg" alt="Baylling School" class="about-img">
+    </div>
+
+    <div class="about-container">
+      <div class="about-text">
+        <h2>Samtse College of Education</h2>
+        <p>I am currently pursuing a Bachelor of Education (Secondary) in Information Technology at Samtse College of Education, which is part of the Royal University of Bhutan. This program is carefully crafted to prepare future teachers to effectively instruct students in coding and digital literacy from grades VII to X.</p>
+        <p>During my studies at Samtse College of Education, I am gaining skills in programming languages, database management, and various ICT applications. The curriculum combines educational theory with hands-on practice, focusing on cutting-edge technologies like artificial intelligence and mostly coding.</p>
+        <p>This course of study goes beyond just learning technical skills; it’s about preparing myself to inspire and equip students with the knowledge and abilities they need to succeed in an increasingly digital world.</p>
+
+      </div>
+      <img src="samtse.jpg" alt="Samtse College" class="about-img">
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills">
+    <h1 class="section-title">Skills</h1>
+    <div class="skills-container">
+      <div class="skills-text">
+      <p>I have a solid foundation in both software and hardware skills. My programming experience includes Python, JavaScript, and SQL, along with web development using HTML, CSS, and basic React. I’m familiar with MySQL for efficient database management and use tools like Excel, Pandas, and NumPy for data analysis. I also excel in teamwork, problem-solving, and am proficient in Microsoft Office for documentation and presentations.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-box"><i class="fab fa-python"></i> Python</div>
+        <div class="skill-box"><i class="fab fa-js-square"></i> JavaScript</div>
+        <div class="skill-box"><i class="fas fa-database"></i> SQL</div>
+        <div class="skill-box"><i class="fab fa-html5"></i> HTML & CSS</div>
+        <div class="skill-box"><i class="fas fa-database"></i> MySQL</div>
+        <div class="skill-box"><i class="fas fa-file-excel"></i> Excel</div>
+        <div class="skill-box"><i class="fas fa-file-powerpoint"></i> PowerPoint</div>
+        <div class="skill-box"><i class="fas fa-file-word"></i> Word</div>
+        <div class="skill-box"><i class="fas fa-lightbulb"></i> Problem-Solving</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects">
+    <h1 class="section-title">Projects</h1>
+
+    <div class="about-container">
+      <div class="about-text">
+        <h2>Adobe Photoshop</h2>
+        <p>For my past project, I worked extensively with Adobe Photoshop to create a visually engaging and professionally polished graphic design piece. The main objective of the project was to enhance my skills in photo editing and digital design while producing a creative output that demonstrates my understanding of Photoshop tools and techniques.</p>
+        <p>I began the project by selecting a high-resolution image, which I edited using various Photoshop features such as layer masks, adjustment layers, the pen tool, and blending modes. I applied color correction techniques to balance tones and enhance image quality, and I used retouching tools like the healing brush and clone stamp to remove imperfections.</p>
+        <p>This project helped me build a stronger understanding of Photoshop’s interface and its wide range of design capabilities. </p>
+
+      </div>
+      <img src="haku.png" alt="Photoshop Project" class="about-img">
+    </div>
+
+    <div class="about-container">
+      <div class="about-text">
+        <h2>Panel Discussion on Media</h2>
+        <p>As part of my academic project, I organized and conducted a panel discussion on the topic "The Importance of Media", which was broadcasted and made from media room of the college. The discussion aimed to highlight the role of media in shaping public opinion, spreading awareness, and its growing influence in the digital age.</p>
+        <p>he panel featured a journalist, a media professor, and a social media expert, who shared valuable insights on topics like media ethics, misinformation, and digital media trends. </p>
+
+      </div>
+      <img src="panel.jpg" alt="Panel Discussion" class="about-img">
+    </div>
+
+    <div class="about-container">
+      <div class="about-text">
+        <h2>EAP Video Reflection</h2>
+        <p>Delivering my video reflection was a valuable and eye-opening experience. At first, I was a bit nervous about expressing my thoughts on camera, knowing that every word and expression would be captured and shared. However, once I began speaking, I found myself becoming more comfortable and focused on the message I wanted to convey.</p>
+        <p>Overall, delivering the video reflection was not only a way to share my thoughts but also a chance to grow. It taught me the importance of preparation, presence, and authenticity — and gave me more confidence to speak in front of others, even if it's just through a screen.</p>
+
+      </div>
+      <video class="about-video" controls muted>
+        <source src="video.jpg.MP4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+  <h1 class="section-title">Contact</h1>
+
+  <div class="contact-box">
+    <div class="contact-container">
+      <a href="mailto:deenobita@gmail.com" class="contact-item">
+        <i class="fas fa-envelope"></i> 08230125.sce@rub.edu.bt
+      </a>
+      <a href="tel:+97517341452" class="contact-item">
+        <i class="fas fa-phone"></i> +97517341452
+      </a>
+      <a href="https://www.facebook.com/ugyen.namgyel.7" class="contact-item" target="_blank">
+        <i class="fab fa-facebook"></i> Facebook: Dong cho
+      </a>
+      <a href="https://www.youtube.com/@deenobita4488" class="contact-item" target="_blank">
+        <i class="fab fa-youtube"></i> YouTube: Dee_Nobita
+      </a>
+      <a href="https://www.tiktok.com/@living_2live" class="contact-item" target="_blank">
+        <i class="fab fa-tiktok"></i> TikTok: @Dong cho
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  &copy; 2025 Dorji Wangchuk. All Rights Reserved.
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const menuBox = document.getElementById('menu-box');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    menuBox.classList.toggle('active');
+    const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+    hamburger.setAttribute('aria-expanded', !expanded);
+  });
+</script>
+
+</body>
+</html>
